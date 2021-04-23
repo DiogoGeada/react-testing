@@ -1,0 +1,14 @@
+.list{
+    background-color: white;
+    width: 100%;
+}
+
+.list ul{
+    padding: 15px;
+}
+
+.list ul > p{
+    color: grey;
+    text-align: center;
+    font-size: 0.8em;
+}
