@@ -23,7 +23,6 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state);
   return {
     list: state.list,
     errors: state.errors
