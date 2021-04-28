@@ -1,14 +1,32 @@
-import logo from './logo.svg';
 import ListComponent from "./components/list/listComponent";
 import './App.css';
+import { Component } from "react";
+import { connect } from "react-redux";
+import store from './redux/store';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>To Do</h1>
-      <ListComponent></ListComponent>
-    </div>
-  );
+class App extends Component {
+
+  constructor(props){
+    super(props);
+
+    store.subscribe(() => { store.getState(); });
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <h1>To Do</h1>
+        <ListComponent items={this.props.list}></ListComponent>
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    list: state.list,
+    errors: state.errors
+  }
+}
+
+export default connect(mapStateToProps)(App);
