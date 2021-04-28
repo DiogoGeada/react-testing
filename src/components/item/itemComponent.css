@@ -1,0 +1,20 @@
+li{
+    padding: 15px 10px;
+    color: white;
+    background-color: mediumseagreen;
+    list-style-type: none;
+    margin: 10px 0;
+    position: relative;
+}
+
+li button.delete{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 51px;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
