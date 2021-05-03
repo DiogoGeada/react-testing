@@ -6,7 +6,9 @@ const listReducer = (state = initialState, action) => {
 
     switch(action.type){
         case ACTIONS.ADD_ITEM:
-            let newList = state.list;
+
+            let newList = [...state.list];
+
             try{
                 newList.push(new Item(action.text));
             } catch (error){
