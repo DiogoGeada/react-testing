@@ -1,4 +1,5 @@
 import ListComponent from "./components/list/listComponent";
+import AddItemComponent from './components/newItem/addItemComponent';
 import './App.css';
 import { Component } from "react";
 import { connect } from "react-redux";
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <h1>To Do</h1>
         <ListComponent items={this.props.list}></ListComponent>
+        <AddItemComponent></AddItemComponent>
       </div>
     );
   }

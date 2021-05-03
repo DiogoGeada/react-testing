@@ -1,0 +1,31 @@
+.addItem{
+    position: relative;
+}
+
+.addItem button{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    bottom: 0;
+    background-color: green;
+    border-radius: 0 100px 100px 0;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+input{
+    width: 60%;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10%;
+    padding: 10px 15px;
+}
+
+input:focus{
+    outline: none;
+}
