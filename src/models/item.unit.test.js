@@ -1,4 +1,4 @@
-import Item from '../../models/item';
+import Item from './item';
 
 test('item model array value', () => {
     expect(() => new Item([0,1,2])).toThrow(/^Item text must be a string or a number$/);
