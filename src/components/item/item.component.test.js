@@ -1,5 +1,5 @@
 import React from "react";
-import ItemComponent from "../../components/item/itemComponent";
+import ItemComponent from "./itemComponent";
 import Item from "../../models/item";
 import {MdDelete} from "react-icons/md";
 import { mount } from "enzyme";
