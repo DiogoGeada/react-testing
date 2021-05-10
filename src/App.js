@@ -1,5 +1,5 @@
 import ListComponent from "./components/list/listComponent";
-import AddItemComponent from './components/newItem/addItemComponent';
+import AddItemComponent from './components/addItem/addItemComponent';
 import './App.css';
 import { Component } from "react";
 import { connect } from "react-redux";
