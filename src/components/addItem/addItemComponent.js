@@ -8,11 +8,6 @@ class AddItemComponent extends Component{
     
     inputText;
 
-    constructor(props){
-        super(props);
-        
-    }
-
     render(){
         return (
             <div className="addItem">

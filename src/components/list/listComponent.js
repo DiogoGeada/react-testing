@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ItemComponent from '../item/itemComponent';
-import addItemComponent from '../newItem/addItemComponent';
 import './listComponent.css';
 
 export default class ListComponent extends Component{
